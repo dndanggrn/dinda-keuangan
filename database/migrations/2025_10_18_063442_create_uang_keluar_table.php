@@ -11,9 +11,9 @@ return new class extends Migration
         Schema::create('uang_keluar', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal');
-            $table->string('keterangan')->nullable(); // ✅ ubah jadi nullable
             $table->decimal('jumlah', 15, 2);
             $table->string('kategori')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->timestamps();
         });
     }

@@ -9,7 +9,6 @@ Route::get('/', function() { return redirect()->route('dashboard'); });
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 
-
 Route::resource('uangmasuk', UangMasukController::class);
 Route::resource('uangkeluar', UangKeluarController::class);
 Route::get('/rekapitulasi', [RekapitulasiController::class, 'index'])->name('rekapitulasi.index');
