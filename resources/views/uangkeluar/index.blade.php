@@ -27,19 +27,12 @@
                         <td>{{ number_format($item->jumlah, 0, ',', '.') }}</td>
                         <td>
                             <a href="{{ route('uangkeluar.edit', $item->id) }}" class="btn btn-primary btn-sm">✏️</a>
-                            <!-- <form action="{{ route('uangkeluar.destroy', $item->id) }}" method="POST" style="display:inline;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Yakin ingin menghapus data ini?')">🗑️</button>
-                                    </form> -->
-                            <!-- Button trigger modal -->
+
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                 data-bs-target="#modalHapus-{{ $item->id }}">
                                 🗑️
                             </button>
 
-                            <!-- Modal -->
                             <div class="modal fade" id="modalHapus-{{ $item->id }}" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
