@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 {
                     label: 'Saldo Akhir',
-                    data: @json($totalKas),
+                    data: @json($saldoAkhir),
                     type: 'line',
                     fill: false,
                     borderColor: 'rgba(54, 162, 235, 1)',
